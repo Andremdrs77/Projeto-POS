@@ -1,0 +1,302 @@
+[
+  {
+    "contexto": "Compatibilidade entre Ryzen 5 5600X e GTX 1660 Super",
+    "resposta": "Compatível. Ryzen 5 5600X funciona bem com a GTX 1660 Super."
+  },
+  {
+    "contexto": "Compatibilidade entre Ryzen 5 5600X e RTX 3060",
+    "resposta": "Compatível. Ryzen 5 5600X funciona bem com a RTX 3060."
+  },
+  {
+    "contexto": "Compatibilidade entre Ryzen 5 5600X e RTX 3060 Ti",
+    "resposta": "Compatível. Ryzen 5 5600X funciona bem com a RTX 3060 Ti."
+  },
+  {
+    "contexto": "Compatibilidade entre Ryzen 5 5600X e RTX 4090",
+    "resposta": "Compatível. Ryzen 5 5600X funciona bem com a RTX 4090."
+  },
+  {
+    "contexto": "Compatibilidade entre Ryzen 5 5600X e RX 6700 XT",
+    "resposta": "Compatível. Ryzen 5 5600X funciona bem com a RX 6700 XT."
+  },
+  {
+    "contexto": "Compatibilidade entre Ryzen 7 5800X e GTX 1660 Super",
+    "resposta": "Compatível. Ryzen 7 5800X funciona bem com a GTX 1660 Super."
+  },
+  {
+    "contexto": "Compatibilidade entre Ryzen 7 5800X e RTX 3060",
+    "resposta": "Compatível. Ryzen 7 5800X funciona bem com a RTX 3060."
+  },
+  {
+    "contexto": "Compatibilidade entre Ryzen 7 5800X e RTX 3060 Ti",
+    "resposta": "Compatível. Ryzen 7 5800X funciona bem com a RTX 3060 Ti."
+  },
+  {
+    "contexto": "Compatibilidade entre Ryzen 7 5800X e RTX 4090",
+    "resposta": "Compatível. Ryzen 7 5800X funciona bem com a RTX 4090."
+  },
+  {
+    "contexto": "Compatibilidade entre Ryzen 7 5800X e RX 6700 XT",
+    "resposta": "Compatível. Ryzen 7 5800X funciona bem com a RX 6700 XT."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel i5-10400F e GTX 1660 Super",
+    "resposta": "Compatível. Intel i5-10400F funciona bem com a GTX 1660 Super."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel i5-10400F e RTX 3060",
+    "resposta": "Compatível. Intel i5-10400F funciona bem com a RTX 3060."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel i5-10400F e RTX 3060 Ti",
+    "resposta": "Compatível. Intel i5-10400F funciona bem com a RTX 3060 Ti."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel i5-10400F e RTX 4090",
+    "resposta": "Intel i5-10400F pode limitar levemente o desempenho da RTX 4090, mas funciona."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel i5-10400F e RX 6700 XT",
+    "resposta": "Compatível. Intel i5-10400F funciona bem com a RX 6700 XT."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel i7-10700K e GTX 1660 Super",
+    "resposta": "Compatível. Intel i7-10700K funciona bem com a GTX 1660 Super."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel i7-10700K e RTX 3060",
+    "resposta": "Compatível. Intel i7-10700K funciona bem com a RTX 3060."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel i7-10700K e RTX 3060 Ti",
+    "resposta": "Compatível. Intel i7-10700K funciona bem com a RTX 3060 Ti."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel i7-10700K e RTX 4090",
+    "resposta": "Compatível. Intel i7-10700K funciona bem com a RTX 4090."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel i7-10700K e RX 6700 XT",
+    "resposta": "Compatível. Intel i7-10700K funciona bem com a RX 6700 XT."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel Core i3-10100F e GTX 1660 Super",
+    "resposta": "Compatível. Intel Core i3-10100F funciona bem com a GTX 1660 Super."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel Core i3-10100F e RTX 3060",
+    "resposta": "Compatível. Intel Core i3-10100F funciona bem com a RTX 3060."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel Core i3-10100F e RTX 3060 Ti",
+    "resposta": "Compatível. Intel Core i3-10100F funciona bem com a RTX 3060 Ti."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel Core i3-10100F e RTX 4090",
+    "resposta": "Incompatível na prática. Intel Core i3-10100F causa gargalo severo com RTX 4090."
+  },
+  {
+    "contexto": "Compatibilidade entre Intel Core i3-10100F e RX 6700 XT",
+    "resposta": "Compatível. Intel Core i3-10100F funciona bem com a RX 6700 XT."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 400W e GTX 1660 Super",
+    "resposta": "Incompatível. GTX 1660 Super requer no mínimo 450W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 500W e GTX 1660 Super",
+    "resposta": "Compatível. Fonte 500W suporta a GTX 1660 Super com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 550W e GTX 1660 Super",
+    "resposta": "Compatível. Fonte 550W suporta a GTX 1660 Super com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 650W e GTX 1660 Super",
+    "resposta": "Compatível. Fonte 650W suporta a GTX 1660 Super com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 850W e GTX 1660 Super",
+    "resposta": "Compatível. Fonte 850W suporta a GTX 1660 Super com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 400W e RTX 3060",
+    "resposta": "Incompatível. RTX 3060 requer no mínimo 550W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 500W e RTX 3060",
+    "resposta": "Incompatível. RTX 3060 requer no mínimo 550W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 550W e RTX 3060",
+    "resposta": "Compatível. Fonte 550W suporta a RTX 3060 com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 650W e RTX 3060",
+    "resposta": "Compatível. Fonte 650W suporta a RTX 3060 com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 850W e RTX 3060",
+    "resposta": "Compatível. Fonte 850W suporta a RTX 3060 com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 400W e RTX 3060 Ti",
+    "resposta": "Incompatível. RTX 3060 Ti requer no mínimo 600W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 500W e RTX 3060 Ti",
+    "resposta": "Incompatível. RTX 3060 Ti requer no mínimo 600W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 550W e RTX 3060 Ti",
+    "resposta": "Incompatível. RTX 3060 Ti requer no mínimo 600W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 650W e RTX 3060 Ti",
+    "resposta": "Compatível. Fonte 650W suporta a RTX 3060 Ti com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 850W e RTX 3060 Ti",
+    "resposta": "Compatível. Fonte 850W suporta a RTX 3060 Ti com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 400W e RTX 4090",
+    "resposta": "Incompatível. RTX 4090 requer no mínimo 850W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 500W e RTX 4090",
+    "resposta": "Incompatível. RTX 4090 requer no mínimo 850W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 550W e RTX 4090",
+    "resposta": "Incompatível. RTX 4090 requer no mínimo 850W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 650W e RTX 4090",
+    "resposta": "Incompatível. RTX 4090 requer no mínimo 850W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 850W e RTX 4090",
+    "resposta": "Compatível. Fonte 850W suporta a RTX 4090 com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 400W e RX 6700 XT",
+    "resposta": "Incompatível. RX 6700 XT requer no mínimo 650W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 500W e RX 6700 XT",
+    "resposta": "Incompatível. RX 6700 XT requer no mínimo 650W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 550W e RX 6700 XT",
+    "resposta": "Incompatível. RX 6700 XT requer no mínimo 650W reais."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 650W e RX 6700 XT",
+    "resposta": "Compatível. Fonte 650W suporta a RX 6700 XT com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 850W e RX 6700 XT",
+    "resposta": "Compatível. Fonte 850W suporta a RX 6700 XT com segurança."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 400W e Ryzen 5 5600X",
+    "resposta": "Compatível. Fonte 400W suporta o consumo do Ryzen 5 5600X sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 500W e Ryzen 5 5600X",
+    "resposta": "Compatível. Fonte 500W suporta o consumo do Ryzen 5 5600X sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 550W e Ryzen 5 5600X",
+    "resposta": "Compatível. Fonte 550W suporta o consumo do Ryzen 5 5600X sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 650W e Ryzen 5 5600X",
+    "resposta": "Compatível. Fonte 650W suporta o consumo do Ryzen 5 5600X sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 850W e Ryzen 5 5600X",
+    "resposta": "Compatível. Fonte 850W suporta o consumo do Ryzen 5 5600X sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 400W e Ryzen 7 5800X",
+    "resposta": "Compatível. Fonte 400W suporta o consumo do Ryzen 7 5800X sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 500W e Ryzen 7 5800X",
+    "resposta": "Compatível. Fonte 500W suporta o consumo do Ryzen 7 5800X sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 550W e Ryzen 7 5800X",
+    "resposta": "Compatível. Fonte 550W suporta o consumo do Ryzen 7 5800X sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 650W e Ryzen 7 5800X",
+    "resposta": "Compatível. Fonte 650W suporta o consumo do Ryzen 7 5800X sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 850W e Ryzen 7 5800X",
+    "resposta": "Compatível. Fonte 850W suporta o consumo do Ryzen 7 5800X sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 400W e Intel i5-10400F",
+    "resposta": "Compatível. Fonte 400W suporta o consumo do Intel i5-10400F sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 500W e Intel i5-10400F",
+    "resposta": "Compatível. Fonte 500W suporta o consumo do Intel i5-10400F sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 550W e Intel i5-10400F",
+    "resposta": "Compatível. Fonte 550W suporta o consumo do Intel i5-10400F sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 650W e Intel i5-10400F",
+    "resposta": "Compatível. Fonte 650W suporta o consumo do Intel i5-10400F sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 850W e Intel i5-10400F",
+    "resposta": "Compatível. Fonte 850W suporta o consumo do Intel i5-10400F sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 400W e Intel i7-10700K",
+    "resposta": "Compatível. Fonte 400W suporta o consumo do Intel i7-10700K sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 500W e Intel i7-10700K",
+    "resposta": "Compatível. Fonte 500W suporta o consumo do Intel i7-10700K sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 550W e Intel i7-10700K",
+    "resposta": "Compatível. Fonte 550W suporta o consumo do Intel i7-10700K sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 650W e Intel i7-10700K",
+    "resposta": "Compatível. Fonte 650W suporta o consumo do Intel i7-10700K sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 850W e Intel i7-10700K",
+    "resposta": "Compatível. Fonte 850W suporta o consumo do Intel i7-10700K sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 400W e Intel Core i3-10100F",
+    "resposta": "Compatível. Fonte 400W suporta o consumo do Intel Core i3-10100F sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 500W e Intel Core i3-10100F",
+    "resposta": "Compatível. Fonte 500W suporta o consumo do Intel Core i3-10100F sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 550W e Intel Core i3-10100F",
+    "resposta": "Compatível. Fonte 550W suporta o consumo do Intel Core i3-10100F sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 650W e Intel Core i3-10100F",
+    "resposta": "Compatível. Fonte 650W suporta o consumo do Intel Core i3-10100F sem problemas."
+  },
+  {
+    "contexto": "Compatibilidade entre Fonte 850W e Intel Core i3-10100F",
+    "resposta": "Compatível. Fonte 850W suporta o consumo do Intel Core i3-10100F sem problemas."
+  }
+]
