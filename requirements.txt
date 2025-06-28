@@ -1,4 +1,2 @@
 fastapi==0.110.0
 uvicorn==0.29.0
-sentence-transformers==2.7.0
-faiss-cpu
