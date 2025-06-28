@@ -2,6 +2,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 
 class Teclado(BaseModel):
+    modelo: str
     interface: str  
     tipo: str  
     sistemas_compatíveis: List[str]  
@@ -9,6 +10,7 @@ class Teclado(BaseModel):
     descanso_de_pulso: bool  
 
 class Mouse(BaseModel):
+    modelo: str
     tipo: str  
     interface: str  
     peso: Optional[float] = None  
@@ -16,6 +18,7 @@ class Mouse(BaseModel):
     sensor: str  
 
 class Monitor(BaseModel):
+    modelo: str
     tamanho: str  
     resolucao: str  
     taxa_atualizacao: str  

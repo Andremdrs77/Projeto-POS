@@ -1,23 +1,55 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
 from typing import List
 from models import *
+import json
+from pathlib import Path
 
 app = FastAPI()
 
-teclados: List[Teclado] = []
-mouses: List[Mouse] = []
-monitores: List[Monitor] = []
-placasdevideo: List[Placadevideo] = []
-fontes: List[Fonte] = []
-headsets: List[Headset] = []
-placasmaes: List[Placamae] = []
+# Caminho do arquivo de dados unificado
+CAMINHO_JSON = Path(__file__).parent / "dados" / "componentes.json"
+
+# Função para carregar os dados do JSON único e distribuir nas listas
+def carregar_componentes():
+    if not CAMINHO_JSON.exists():
+        return {
+            "teclados": [],
+            "mouses": [],
+            "monitores": [],
+            "placasdevideo": [],
+            "fontes": [],
+            "headsets": [],
+            "placasmaes": []
+        }
+
+    with open(CAMINHO_JSON, encoding="utf-8") as f:
+        dados = json.load(f)
+
+    return {
+        "teclados": [Teclado(**item) for item in dados.get("teclado", [])],
+        "mouses": [Mouse(**item) for item in dados.get("mouse", [])],
+        "monitores": [Monitor(**item) for item in dados.get("monitor", [])],
+        "placasdevideo": [Placadevideo(**item) for item in dados.get("placadevideo", [])],
+        "fontes": [Fonte(**item) for item in dados.get("fonte", [])],
+        "headsets": [Headset(**item) for item in dados.get("headset", [])],
+        "placasmaes": [Placamae(**item) for item in dados.get("placamae", [])],
+    }
+
+# Inicializa listas a partir do arquivo JSON
+componentes = carregar_componentes()
+
+tTeclados = componentes["teclados"]
+mouses = componentes["mouses"]
+monitores = componentes["monitores"]
+placasdevideo = componentes["placasdevideo"]
+fontes = componentes["fontes"]
+headsets = componentes["headsets"]
+placasmaes = componentes["placasmaes"]
 
 # GET ----------
-
 @app.get("/componentes/teclados", response_model=List[Teclado])
 def listar_teclados():
-    return teclados
+    return tTeclados
 
 @app.get("/componentes/mouses", response_model=List[Mouse])
 def listar_mouses():
