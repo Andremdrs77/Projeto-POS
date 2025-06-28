@@ -38,7 +38,7 @@ def carregar_componentes():
 # Inicializa listas a partir do arquivo JSON
 componentes = carregar_componentes()
 
-tTeclados = componentes["teclados"]
+teclados = componentes["teclados"]
 mouses = componentes["mouses"]
 monitores = componentes["monitores"]
 placasdevideo = componentes["placasdevideo"]
@@ -49,7 +49,7 @@ placasmaes = componentes["placasmaes"]
 # GET ----------
 @app.get("/componentes/teclados", response_model=List[Teclado])
 def listar_teclados():
-    return tTeclados
+    return teclados
 
 @app.get("/componentes/mouses", response_model=List[Mouse])
 def listar_mouses():
