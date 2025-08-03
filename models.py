@@ -6,7 +6,7 @@ class Teclado(SQLModel, table=True):
     modelo: str = Field(index=False)
     interface: str = Field(index=False)
     tipo: str = Field(index=False)
-    sistemas_compativeis: List[str] = Field(sa_column=Column(JSON), index=False)
+    sistemas_compativeis: List[str] = Field(sa_column=Column(JSON))
     layout: str = Field(index=False)
     descanso_de_pulso: bool = Field(index=False)
 
@@ -27,7 +27,7 @@ class Monitor(SQLModel, table=True):
     taxa_atualizacao: str = Field(index=False)
     tempo_resposta: str = Field(index=False)
     tipo_painel: str = Field(index=False)
-    entradas: List[str] = Field(sa_column=Column(JSON), index=False)
+    entradas: List[str] = Field(sa_column=Column(JSON))
     ajuste_altura: bool = Field(index=False)
 
 class Placadevideo(SQLModel, table=True):
@@ -36,8 +36,8 @@ class Placadevideo(SQLModel, table=True):
     fabricante: str = Field(index=False)
     interface: str = Field(index=False)
     resolucoes_suportadas: str = Field(index=False)
-    saidas_video: List[str] = Field(sa_column=Column(JSON), index=False)
-    suporte_tecnologias: List[str] = Field(sa_column=Column(JSON), index=False)
+    saidas_video: List[str] = Field(sa_column=Column(JSON))
+    suporte_tecnologias: List[str] = Field(sa_column=Column(JSON))
     consumo: int = Field(index=False)
     alimentacao_extra: Optional[str] = Field(default=None, index=False)
 
@@ -48,9 +48,9 @@ class Fonte(SQLModel, table=True):
     potencia: int = Field(index=False)
     tipo: str = Field(index=False)
     modularidade: str = Field(index=False)
-    conectores: List[str] = Field(sa_column=Column(JSON), index=False)
+    conectores: List[str] = Field(sa_column=Column(JSON))
     voltagem: str = Field(index=False)
-    protecoes: List[str] = Field(sa_column=Column(JSON), index=False)
+    protecoes: List[str] = Field(sa_column=Column(JSON))
     eficiencia: str = Field(index=False)
 
 class Headset(SQLModel, table=True):
@@ -58,7 +58,7 @@ class Headset(SQLModel, table=True):
     modelo: str = Field(index=False)
     fabricante: str = Field(index=False)
     tipo_conexao: str = Field(index=False)
-    compatibilidade: List[str] = Field(sa_column=Column(JSON), index=False)
+    compatibilidade: List[str] = Field(sa_column=Column(JSON))
     microfone: str = Field(index=False)
     tipo: str = Field(index=False)
     controle_volume: str = Field(index=False)
@@ -71,5 +71,5 @@ class Placamae(SQLModel, table=True):
     chipset: str = Field(index=False)
     formato: str = Field(index=False)
     suporte_memoria: str = Field(index=False)
-    armazenamento: List[str] = Field(sa_column=Column(JSON), index=False)
-    saidas_video: List[str] = Field(sa_column=Column(JSON), index=False)
+    armazenamento: List[str] = Field(sa_column=Column(JSON))
+    saidas_video: List[str] = Field(sa_column=Column(JSON))
