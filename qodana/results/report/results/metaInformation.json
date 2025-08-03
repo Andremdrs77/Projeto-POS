@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "total": 6,
+  "tools inspection": {
+    "Code Inspection": 6
+  },
+  "linter": "QDPY",
+  "attributes": {
+    "deviceId": "200820300000000-a5a3-2767-6709-fa686c5f7066",
+    "jobUrl": "",
+    "vcs": {
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/Andremdrs77/Projeto-POS.git",
+        "revisionId": "43d2a18bbdb07da7d663667166badfcc4ff2cecc",
+        "branch": "main"
+      }
+    },
+    "repoUrl": "https://github.com/Andremdrs77/Projeto-POS.git"
+  },
+  "linterVersion": "251.25776"
+}

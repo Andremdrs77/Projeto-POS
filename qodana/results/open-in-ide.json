@@ -1,0 +1,12 @@
+{
+  "cloud" : {
+    "url" : "https://qodana.cloud/projects/YO9KQ/reports/WYrPBg",
+    "reportId" : "WYrPBg",
+    "projectId" : "YO9KQ",
+    "projectName" : "My first project",
+    "host" : "https://qodana.cloud"
+  },
+  "vcs" : {
+    "origin" : "https://github.com/Andremdrs77/Projeto-POS.git"
+  }
+}

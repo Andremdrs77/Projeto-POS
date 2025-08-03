@@ -1,0 +1,325 @@
+{
+  "version": "3",
+  "listProblem": [
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unresolved references",
+      "tags": [
+        "Python",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference 'Field'",
+      "detailsInfo": "Reports references in your code that cannot be resolved.\n\nIn a dynamically typed language, this is possible in a limited number of cases.\n\nIf a reference type is unknown, then its attributes are not highlighted as unresolved even if you know that they should be:\n\n\n    def print_string(s):\n      print(s.abc())\n\nIn this code fragment `s` is always a string and `abc` should be highlighted as unresolved. However, `s`\ntype is inferred as `Any` and no warning is reported.\n\nThe IDE provides quick-fix actions to add missing references on-the-fly.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "models.py",
+          "language": "Python",
+          "line": 1,
+          "offset": 32,
+          "length": 5,
+          "code": {
+            "startLine": 1,
+            "length": 5,
+            "offset": 31,
+            "surroundingCode": "from sqlmodel import SQLModel, Field, Column, JSON\r\nfrom typing import List, Optional\r\n\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyUnresolvedReferencesInspection"
+      },
+      "hash": "110aee26901801d22e106a2ffc6d14384f3a647848c70f60c44d2d4db3f01590",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unresolved references",
+      "tags": [
+        "Python",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference 'Column'",
+      "detailsInfo": "Reports references in your code that cannot be resolved.\n\nIn a dynamically typed language, this is possible in a limited number of cases.\n\nIf a reference type is unknown, then its attributes are not highlighted as unresolved even if you know that they should be:\n\n\n    def print_string(s):\n      print(s.abc())\n\nIn this code fragment `s` is always a string and `abc` should be highlighted as unresolved. However, `s`\ntype is inferred as `Any` and no warning is reported.\n\nThe IDE provides quick-fix actions to add missing references on-the-fly.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "models.py",
+          "language": "Python",
+          "line": 1,
+          "offset": 39,
+          "length": 6,
+          "code": {
+            "startLine": 1,
+            "length": 6,
+            "offset": 38,
+            "surroundingCode": "from sqlmodel import SQLModel, Field, Column, JSON\r\nfrom typing import List, Optional\r\n\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyUnresolvedReferencesInspection"
+      },
+      "hash": "16fef24a325e164597a24fb27b557de153277699cd4be3aa15f31fb74e102817",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unresolved references",
+      "tags": [
+        "Python",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference 'sqlmodel'",
+      "detailsInfo": "Reports references in your code that cannot be resolved.\n\nIn a dynamically typed language, this is possible in a limited number of cases.\n\nIf a reference type is unknown, then its attributes are not highlighted as unresolved even if you know that they should be:\n\n\n    def print_string(s):\n      print(s.abc())\n\nIn this code fragment `s` is always a string and `abc` should be highlighted as unresolved. However, `s`\ntype is inferred as `Any` and no warning is reported.\n\nThe IDE provides quick-fix actions to add missing references on-the-fly.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "main.py",
+          "language": "Python",
+          "line": 2,
+          "offset": 6,
+          "length": 8,
+          "code": {
+            "startLine": 1,
+            "length": 8,
+            "offset": 43,
+            "surroundingCode": "from fastapi import FastAPI, Depends\r\nfrom sqlmodel import SQLModel, Session, create_engine, select\r\nfrom models import Teclado, Mouse, Monitor, Placadevideo, Fonte, Headset, Placamae\r\nfrom typing import Annotated\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyUnresolvedReferencesInspection"
+      },
+      "hash": "633e7c8454e995ab8e9d15c56c6e8febdafc292feb66eb633a5d30e0e551dafe",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unresolved references",
+      "tags": [
+        "Python",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference 'Depends'",
+      "detailsInfo": "Reports references in your code that cannot be resolved.\n\nIn a dynamically typed language, this is possible in a limited number of cases.\n\nIf a reference type is unknown, then its attributes are not highlighted as unresolved even if you know that they should be:\n\n\n    def print_string(s):\n      print(s.abc())\n\nIn this code fragment `s` is always a string and `abc` should be highlighted as unresolved. However, `s`\ntype is inferred as `Any` and no warning is reported.\n\nThe IDE provides quick-fix actions to add missing references on-the-fly.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "main.py",
+          "language": "Python",
+          "line": 1,
+          "offset": 30,
+          "length": 7,
+          "code": {
+            "startLine": 1,
+            "length": 7,
+            "offset": 29,
+            "surroundingCode": "from fastapi import FastAPI, Depends\r\nfrom sqlmodel import SQLModel, Session, create_engine, select\r\nfrom models import Teclado, Mouse, Monitor, Placadevideo, Fonte, Headset, Placamae\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyUnresolvedReferencesInspection"
+      },
+      "hash": "6e0bdb611b5e107f1265d1eddb2c225d1b16000d32748c7edda2344b7b1e5307",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unresolved references",
+      "tags": [
+        "Python",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference 'sqlmodel'",
+      "detailsInfo": "Reports references in your code that cannot be resolved.\n\nIn a dynamically typed language, this is possible in a limited number of cases.\n\nIf a reference type is unknown, then its attributes are not highlighted as unresolved even if you know that they should be:\n\n\n    def print_string(s):\n      print(s.abc())\n\nIn this code fragment `s` is always a string and `abc` should be highlighted as unresolved. However, `s`\ntype is inferred as `Any` and no warning is reported.\n\nThe IDE provides quick-fix actions to add missing references on-the-fly.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "models.py",
+          "language": "Python",
+          "line": 1,
+          "offset": 6,
+          "length": 8,
+          "code": {
+            "startLine": 1,
+            "length": 8,
+            "offset": 5,
+            "surroundingCode": "from sqlmodel import SQLModel, Field, Column, JSON\r\nfrom typing import List, Optional\r\n\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyUnresolvedReferencesInspection"
+      },
+      "hash": "b5527d72a0de96c5b532e3ada6106065a59d27df00a5291ef309e6e0b548d132",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unresolved references",
+      "tags": [
+        "Python",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference 'FastAPI'",
+      "detailsInfo": "Reports references in your code that cannot be resolved.\n\nIn a dynamically typed language, this is possible in a limited number of cases.\n\nIf a reference type is unknown, then its attributes are not highlighted as unresolved even if you know that they should be:\n\n\n    def print_string(s):\n      print(s.abc())\n\nIn this code fragment `s` is always a string and `abc` should be highlighted as unresolved. However, `s`\ntype is inferred as `Any` and no warning is reported.\n\nThe IDE provides quick-fix actions to add missing references on-the-fly.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "main.py",
+          "language": "Python",
+          "line": 1,
+          "offset": 21,
+          "length": 7,
+          "code": {
+            "startLine": 1,
+            "length": 7,
+            "offset": 20,
+            "surroundingCode": "from fastapi import FastAPI, Depends\r\nfrom sqlmodel import SQLModel, Session, create_engine, select\r\nfrom models import Teclado, Mouse, Monitor, Placadevideo, Fonte, Headset, Placamae\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyUnresolvedReferencesInspection"
+      },
+      "hash": "ce68d8985b558e2909c02f7da03df11c7751621ab38ebe2e26ff425c11829438",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unresolved references",
+      "tags": [
+        "Python",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference 'SQLModel'",
+      "detailsInfo": "Reports references in your code that cannot be resolved.\n\nIn a dynamically typed language, this is possible in a limited number of cases.\n\nIf a reference type is unknown, then its attributes are not highlighted as unresolved even if you know that they should be:\n\n\n    def print_string(s):\n      print(s.abc())\n\nIn this code fragment `s` is always a string and `abc` should be highlighted as unresolved. However, `s`\ntype is inferred as `Any` and no warning is reported.\n\nThe IDE provides quick-fix actions to add missing references on-the-fly.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "models.py",
+          "language": "Python",
+          "line": 1,
+          "offset": 22,
+          "length": 8,
+          "code": {
+            "startLine": 1,
+            "length": 8,
+            "offset": 21,
+            "surroundingCode": "from sqlmodel import SQLModel, Field, Column, JSON\r\nfrom typing import List, Optional\r\n\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyUnresolvedReferencesInspection"
+      },
+      "hash": "db28a367cd26c166e17c8cebe44f804952afa53a8c1d7e85401fe68e875a5f77",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unresolved references",
+      "tags": [
+        "Python",
+        "Sanity"
+      ],
+      "severity": "Critical",
+      "comment": "Unresolved reference 'fastapi'",
+      "detailsInfo": "Reports references in your code that cannot be resolved.\n\nIn a dynamically typed language, this is possible in a limited number of cases.\n\nIf a reference type is unknown, then its attributes are not highlighted as unresolved even if you know that they should be:\n\n\n    def print_string(s):\n      print(s.abc())\n\nIn this code fragment `s` is always a string and `abc` should be highlighted as unresolved. However, `s`\ntype is inferred as `Any` and no warning is reported.\n\nThe IDE provides quick-fix actions to add missing references on-the-fly.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "main.py",
+          "language": "Python",
+          "line": 1,
+          "offset": 6,
+          "length": 7,
+          "code": {
+            "startLine": 1,
+            "length": 7,
+            "offset": 5,
+            "surroundingCode": "from fastapi import FastAPI, Depends\r\nfrom sqlmodel import SQLModel, Session, create_engine, select\r\nfrom models import Teclado, Mouse, Monitor, Placadevideo, Fonte, Headset, Placamae\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyUnresolvedReferencesInspection"
+      },
+      "hash": "de607eddf04a783c2f25bb742576bed0a5793dfb4f73b31d5001f836e476381d",
+      "problemType": "REGULAR"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "version": "3",
+  "listProblem": [
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unsatisfied package requirements",
+      "tags": [
+        "Python"
+      ],
+      "severity": "High",
+      "comment": "Package requirements 'fastapi==0.110.0', 'uvicorn==0.29.0' are not satisfied",
+      "detailsInfo": "Reports packages mentioned in requirements files (for example, `requirements.txt` or `Pipfile`) but not installed,\nor imported but not mentioned in requirements files.\n\n\nThe IDE shows a quick-fix banner so that you can install the missing packages in one click.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "main.py",
+          "language": "Python",
+          "line": 1,
+          "offset": 1,
+          "length": 3213,
+          "code": {
+            "startLine": 1,
+            "length": 3213,
+            "offset": 0,
+            "surroundingCode": "from fastapi import FastAPI, Depends\r\nfrom sqlmodel import SQLModel, Session, create_engine, select\r\nfrom models import Teclado, Mouse, Monitor, Placadevideo, Fonte, Headset, Placamae\r\nfrom typing import Annotated\r\nfrom contextlib import asynccontextmanager\r\n\r\n# Configuração do banco\r\nurl = \"sqlite:///banco.db\"\r\nengine = create_engine(url)\r\n\r\ndef get_session():\r\n    with Session(engine) as session:\r\n        yield session\r\n\r\ndef create_db():\r\n    SQLModel.metadata.create_all(engine)\r\n\r\nSessionDep = Annotated[Session, Depends(get_session)]\r\n\r\n@asynccontextmanager\r\nasync def lifespan(app: FastAPI):\r\n    create_db()\r\n    yield\r\n\r\napp = FastAPI(lifespan=lifespan)\r\n\r\n# -------- GET --------\r\n@app.get(\"/componentes/teclados\")\r\ndef listar_teclados(session: SessionDep) -> list[Teclado]:\r\n    return session.exec(select(Teclado).limit(100)).all()\r\n\r\n@app.get(\"/componentes/mouses\")\r\ndef listar_mouses(session: SessionDep) -> list[Mouse]:\r\n    return session.exec(select(Mouse).limit(100)).all()\r\n\r\n@app.get(\"/componentes/monitores\")\r\ndef listar_monitores(session: SessionDep) -> list[Monitor]:\r\n    return session.exec(select(Monitor).limit(100)).all()\r\n\r\n@app.get(\"/componentes/placas_de_video\")\r\ndef listar_placas_video(session: SessionDep) -> list[Placadevideo]:\r\n    return session.exec(select(Placadevideo).limit(100)).all()\r\n\r\n@app.get(\"/componentes/fontes\")\r\ndef listar_fontes(session: SessionDep) -> list[Fonte]:\r\n    return session.exec(select(Fonte).limit(100)).all()\r\n\r\n@app.get(\"/componentes/headsets\")\r\ndef listar_headsets(session: SessionDep) -> list[Headset]:\r\n    return session.exec(select(Headset).limit(100)).all()\r\n\r\n@app.get(\"/componentes/placas_maes\")\r\ndef listar_placas_maes(session: SessionDep) -> list[Placamae]:\r\n    return session.exec(select(Placamae).limit(100)).all()\r\n\r\n# -------- POST --------\r\n@app.post(\"/componentes/teclados\")\r\ndef adicionar_teclado(teclado: Teclado, session: SessionDep) -> Teclado:\r\n    session.add(teclado)\r\n    session.commit()\r\n    session.refresh(teclado)\r\n    return teclado\r\n\r\n@app.post(\"/componentes/mouses\")\r\ndef adicionar_mouse(mouse: Mouse, session: SessionDep) -> Mouse:\r\n    session.add(mouse)\r\n    session.commit()\r\n    session.refresh(mouse)\r\n    return mouse\r\n\r\n@app.post(\"/componentes/monitores\")\r\ndef adicionar_monitor(monitor: Monitor, session: SessionDep) -> Monitor:\r\n    session.add(monitor)\r\n    session.commit()\r\n    session.refresh(monitor)\r\n    return monitor\r\n\r\n@app.post(\"/componentes/placas_de_video\")\r\ndef adicionar_placa_video(placadevideo: Placadevideo, session: SessionDep) -> Placadevideo:\r\n    session.add(placadevideo)\r\n    session.commit()\r\n    session.refresh(placadevideo)\r\n    return placadevideo\r\n\r\n@app.post(\"/componentes/fontes\")\r\ndef adicionar_fonte(fonte: Fonte, session: SessionDep) -> Fonte:\r\n    session.add(fonte)\r\n    session.commit()\r\n    session.refresh(fonte)\r\n    return fonte\r\n\r\n@app.post(\"/componentes/headsets\")\r\ndef adicionar_headset(headset: Headset, session: SessionDep) -> Headset:\r\n    session.add(headset)\r\n    session.commit()\r\n    session.refresh(headset)\r\n    return headset\r\n\r\n@app.post(\"/componentes/placas_maes\")\r\ndef adicionar_placa_mae(placamae: Placamae, session: SessionDep) -> Placamae"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyPackageRequirementsInspection"
+      },
+      "hash": "3f1847f0cbd889b3653269dfe387ac0a269267bfec3a3cb61d9465ab032ae8a5",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unsatisfied package requirements",
+      "tags": [
+        "Python"
+      ],
+      "severity": "Moderate",
+      "comment": "Package containing module 'sqlmodel' is not listed in the project requirements",
+      "detailsInfo": "Reports packages mentioned in requirements files (for example, `requirements.txt` or `Pipfile`) but not installed,\nor imported but not mentioned in requirements files.\n\n\nThe IDE shows a quick-fix banner so that you can install the missing packages in one click.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "main.py",
+          "language": "Python",
+          "line": 2,
+          "offset": 6,
+          "length": 8,
+          "code": {
+            "startLine": 1,
+            "length": 8,
+            "offset": 43,
+            "surroundingCode": "from fastapi import FastAPI, Depends\r\nfrom sqlmodel import SQLModel, Session, create_engine, select\r\nfrom models import Teclado, Mouse, Monitor, Placadevideo, Fonte, Headset, Placamae\r\nfrom typing import Annotated\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyPackageRequirementsInspection"
+      },
+      "hash": "63ac8c5d8b2bad84f2672ecbdc09785afd5525a239fef53f395bfc7cfebe0e20",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unsatisfied package requirements",
+      "tags": [
+        "Python"
+      ],
+      "severity": "High",
+      "comment": "Package requirements 'fastapi==0.110.0', 'uvicorn==0.29.0' are not satisfied",
+      "detailsInfo": "Reports packages mentioned in requirements files (for example, `requirements.txt` or `Pipfile`) but not installed,\nor imported but not mentioned in requirements files.\n\n\nThe IDE shows a quick-fix banner so that you can install the missing packages in one click.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "models.py",
+          "language": "Python",
+          "line": 1,
+          "offset": 1,
+          "length": 3201,
+          "code": {
+            "startLine": 1,
+            "length": 3201,
+            "offset": 0,
+            "surroundingCode": "from sqlmodel import SQLModel, Field, Column, JSON\r\nfrom typing import List, Optional\r\n\r\nclass Teclado(SQLModel, table=True):\r\n    id: Optional[int] = Field(default=None, primary_key=True, index=False)\r\n    modelo: str = Field(index=False)\r\n    interface: str = Field(index=False)\r\n    tipo: str = Field(index=False)\r\n    sistemas_compativeis: List[str] = Field(sa_column=Column(JSON))\r\n    layout: str = Field(index=False)\r\n    descanso_de_pulso: bool = Field(index=False)\r\n\r\nclass Mouse(SQLModel, table=True):\r\n    id: Optional[int] = Field(default=None, primary_key=True, index=False)\r\n    modelo: str = Field(index=False)\r\n    tipo: str = Field(index=False)\r\n    interface: str = Field(index=False)\r\n    peso: Optional[float] = Field(default=None, index=False)\r\n    dpi_max: int = Field(index=False)\r\n    sensor: str = Field(index=False)\r\n\r\nclass Monitor(SQLModel, table=True):\r\n    id: Optional[int] = Field(default=None, primary_key=True, index=False)\r\n    modelo: str = Field(index=False)\r\n    tamanho: str = Field(index=False)\r\n    resolucao: str = Field(index=False)\r\n    taxa_atualizacao: str = Field(index=False)\r\n    tempo_resposta: str = Field(index=False)\r\n    tipo_painel: str = Field(index=False)\r\n    entradas: List[str] = Field(sa_column=Column(JSON))\r\n    ajuste_altura: bool = Field(index=False)\r\n\r\nclass Placadevideo(SQLModel, table=True):\r\n    id: Optional[int] = Field(default=None, primary_key=True, index=False)\r\n    modelo: str = Field(index=False)\r\n    fabricante: str = Field(index=False)\r\n    interface: str = Field(index=False)\r\n    resolucoes_suportadas: str = Field(index=False)\r\n    saidas_video: List[str] = Field(sa_column=Column(JSON))\r\n    suporte_tecnologias: List[str] = Field(sa_column=Column(JSON))\r\n    consumo: int = Field(index=False)\r\n    alimentacao_extra: Optional[str] = Field(default=None, index=False)\r\n\r\nclass Fonte(SQLModel, table=True):\r\n    id: Optional[int] = Field(default=None, primary_key=True, index=False)\r\n    modelo: str = Field(index=False)\r\n    fabricante: str = Field(index=False)\r\n    potencia: int = Field(index=False)\r\n    tipo: str = Field(index=False)\r\n    modularidade: str = Field(index=False)\r\n    conectores: List[str] = Field(sa_column=Column(JSON))\r\n    voltagem: str = Field(index=False)\r\n    protecoes: List[str] = Field(sa_column=Column(JSON))\r\n    eficiencia: str = Field(index=False)\r\n\r\nclass Headset(SQLModel, table=True):\r\n    id: Optional[int] = Field(default=None, primary_key=True, index=False)\r\n    modelo: str = Field(index=False)\r\n    fabricante: str = Field(index=False)\r\n    tipo_conexao: str = Field(index=False)\r\n    compatibilidade: List[str] = Field(sa_column=Column(JSON))\r\n    microfone: str = Field(index=False)\r\n    tipo: str = Field(index=False)\r\n    controle_volume: str = Field(index=False)\r\n\r\nclass Placamae(SQLModel, table=True):\r\n    id: Optional[int] = Field(default=None, primary_key=True, index=False)\r\n    modelo: str = Field(index=False)\r\n    fabricante: str = Field(index=False)\r\n    socket: str = Field(index=False)\r\n    chipset: str = Field(index=False)\r\n    formato: str = Field(index=False)\r\n    suporte_memoria: str = Field(index=False)\r\n    armazenamento: List[str] = Field(sa_column="
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyPackageRequirementsInspection"
+      },
+      "hash": "d12cfe66020c7d677ded342fea26c2e071d57437eb7242c7dcdce50c180ad7ea",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unsatisfied package requirements",
+      "tags": [
+        "Python"
+      ],
+      "severity": "Moderate",
+      "comment": "Package containing module 'sqlmodel' is not listed in the project requirements",
+      "detailsInfo": "Reports packages mentioned in requirements files (for example, `requirements.txt` or `Pipfile`) but not installed,\nor imported but not mentioned in requirements files.\n\n\nThe IDE shows a quick-fix banner so that you can install the missing packages in one click.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "models.py",
+          "language": "Python",
+          "line": 1,
+          "offset": 6,
+          "length": 8,
+          "code": {
+            "startLine": 1,
+            "length": 8,
+            "offset": 5,
+            "surroundingCode": "from sqlmodel import SQLModel, Field, Column, JSON\r\nfrom typing import List, Optional\r\n\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyPackageRequirementsInspection"
+      },
+      "hash": "fd2eeea3acaf88b6234a6d0e62729e98cd0f567bb55d56b1b1c58a801202c3e6",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Shadowing names from outer scopes",
+      "tags": [
+        "Python"
+      ],
+      "severity": "Moderate",
+      "comment": "Shadows name 'app' from outer scope",
+      "detailsInfo": "Reports shadowing names defined in outer scopes.\n\n**Example:**\n\n\n    def outer(p):\n        def inner(p):\n            pass\n\nAs a quick-fix, the IDE offers to remove a parameter or rename it.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "main.py",
+          "language": "Python",
+          "line": 21,
+          "offset": 20,
+          "length": 3,
+          "code": {
+            "startLine": 19,
+            "length": 3,
+            "offset": 43,
+            "surroundingCode": "\r\n@asynccontextmanager\r\nasync def lifespan(app: FastAPI):\r\n    create_db()\r\n    yield\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyShadowingNamesInspection"
+      },
+      "hash": "e67bcb52d9d4069cc24c9f191c10022a55de5bfa418420469691e6cb7fc13a52",
+      "problemType": "REGULAR"
+    },
+    {
+      "tool": "Code Inspection",
+      "category": "Python",
+      "categoryPath": [
+        {
+          "id": "Python",
+          "name": "Python"
+        }
+      ],
+      "type": "Unused local symbols",
+      "tags": [
+        "Python"
+      ],
+      "severity": "Moderate",
+      "comment": "Parameter 'app' value is not used",
+      "detailsInfo": "Reports local variables, parameters, and functions that are locally defined, but not used name in a function.",
+      "sources": [
+        {
+          "type": "file",
+          "path": "main.py",
+          "language": "Python",
+          "line": 21,
+          "offset": 20,
+          "length": 12,
+          "code": {
+            "startLine": 19,
+            "length": 12,
+            "offset": 43,
+            "surroundingCode": "\r\n@asynccontextmanager\r\nasync def lifespan(app: FastAPI):\r\n    create_db()\r\n    yield\r"
+          }
+        }
+      ],
+      "attributes": {
+        "module": "project",
+        "inspectionName": "PyUnusedLocalInspection"
+      },
+      "hash": "ba71afc237e0cf6012f04c09b3dac3a3983ee55a7076a2b8e290c6e9f8f1e196",
+      "problemType": "REGULAR"
+    }
+  ]
+}

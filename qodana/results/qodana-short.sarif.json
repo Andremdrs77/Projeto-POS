@@ -1,0 +1,525 @@
+{
+  "$schema": "https://raw.githubusercontent.com/schemastore/schemastore/master/src/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "QDPY",
+          "fullName": "Qodana for Python",
+          "version": "251.25776",
+          "rules": [],
+          "taxa": [],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        },
+        "extensions": []
+      },
+      "invocations": [
+        {
+          "startTimeUtc": "2025-08-03T19:00:59.711803117Z",
+          "exitCode": 0,
+          "executionSuccessful": true
+        }
+      ],
+      "language": "en-US",
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/Andremdrs77/Projeto-POS.git",
+          "revisionId": "43d2a18bbdb07da7d663667166badfcc4ff2cecc",
+          "branch": "main",
+          "properties": {
+            "repoUrl": "https://github.com/Andremdrs77/Projeto-POS.git",
+            "lastAuthorName": "JulioTVRS",
+            "vcsType": "Git",
+            "lastAuthorEmail": "juliotvrs777@gmail.com"
+          }
+        }
+      ],
+      "results": [],
+      "automationDetails": {
+        "id": "project/qodana/2025-08-03",
+        "guid": "b6d7fa21-26a8-45db-8c67-9a520928c821",
+        "properties": {
+          "jobUrl": "",
+          "analysisKind": "regular"
+        }
+      },
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ],
+      "properties": {
+        "qodana.sanity.results": [
+          {
+            "ruleId": "PyUnresolvedReferencesInspection",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "Unresolved reference 'Field'",
+              "markdown": "Unresolved reference 'Field'"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "models.py",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 32,
+                    "charOffset": 31,
+                    "charLength": 5,
+                    "snippet": {
+                      "text": "Field"
+                    },
+                    "sourceLanguage": "Python"
+                  },
+                  "contextRegion": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "charOffset": 0,
+                    "charLength": 88,
+                    "snippet": {
+                      "text": "from sqlmodel import SQLModel, Field, Column, JSON\r\nfrom typing import List, Optional\r\n\r"
+                    },
+                    "sourceLanguage": "Python"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "project",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v2": "2ff57601f7e7af45",
+              "equalIndicator/v1": "110aee26901801d22e106a2ffc6d14384f3a647848c70f60c44d2d4db3f01590"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical",
+              "problemType": "REGULAR",
+              "tags": [
+                "Python"
+              ]
+            }
+          },
+          {
+            "ruleId": "PyUnresolvedReferencesInspection",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "Unresolved reference 'Column'",
+              "markdown": "Unresolved reference 'Column'"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "models.py",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 39,
+                    "charOffset": 38,
+                    "charLength": 6,
+                    "snippet": {
+                      "text": "Column"
+                    },
+                    "sourceLanguage": "Python"
+                  },
+                  "contextRegion": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "charOffset": 0,
+                    "charLength": 88,
+                    "snippet": {
+                      "text": "from sqlmodel import SQLModel, Field, Column, JSON\r\nfrom typing import List, Optional\r\n\r"
+                    },
+                    "sourceLanguage": "Python"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "project",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v2": "599810784b6cbed2",
+              "equalIndicator/v1": "16fef24a325e164597a24fb27b557de153277699cd4be3aa15f31fb74e102817"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical",
+              "problemType": "REGULAR",
+              "tags": [
+                "Python"
+              ]
+            }
+          },
+          {
+            "ruleId": "PyUnresolvedReferencesInspection",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "Unresolved reference 'sqlmodel'",
+              "markdown": "Unresolved reference 'sqlmodel'"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "main.py",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 2,
+                    "startColumn": 6,
+                    "charOffset": 43,
+                    "charLength": 8,
+                    "snippet": {
+                      "text": "sqlmodel"
+                    },
+                    "sourceLanguage": "Python"
+                  },
+                  "contextRegion": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "charOffset": 0,
+                    "charLength": 214,
+                    "snippet": {
+                      "text": "from fastapi import FastAPI, Depends\r\nfrom sqlmodel import SQLModel, Session, create_engine, select\r\nfrom models import Teclado, Mouse, Monitor, Placadevideo, Fonte, Headset, Placamae\r\nfrom typing import Annotated\r"
+                    },
+                    "sourceLanguage": "Python"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "project",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v2": "bc6809332173d56e",
+              "equalIndicator/v1": "633e7c8454e995ab8e9d15c56c6e8febdafc292feb66eb633a5d30e0e551dafe"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical",
+              "problemType": "REGULAR",
+              "tags": [
+                "Python"
+              ]
+            }
+          },
+          {
+            "ruleId": "PyUnresolvedReferencesInspection",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "Unresolved reference 'Depends'",
+              "markdown": "Unresolved reference 'Depends'"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "main.py",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 30,
+                    "charOffset": 29,
+                    "charLength": 7,
+                    "snippet": {
+                      "text": "Depends"
+                    },
+                    "sourceLanguage": "Python"
+                  },
+                  "contextRegion": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "charOffset": 0,
+                    "charLength": 184,
+                    "snippet": {
+                      "text": "from fastapi import FastAPI, Depends\r\nfrom sqlmodel import SQLModel, Session, create_engine, select\r\nfrom models import Teclado, Mouse, Monitor, Placadevideo, Fonte, Headset, Placamae\r"
+                    },
+                    "sourceLanguage": "Python"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "project",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v2": "1f1adbfe3b16a265",
+              "equalIndicator/v1": "6e0bdb611b5e107f1265d1eddb2c225d1b16000d32748c7edda2344b7b1e5307"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical",
+              "problemType": "REGULAR",
+              "tags": [
+                "Python"
+              ]
+            }
+          },
+          {
+            "ruleId": "PyUnresolvedReferencesInspection",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "Unresolved reference 'sqlmodel'",
+              "markdown": "Unresolved reference 'sqlmodel'"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "models.py",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 6,
+                    "charOffset": 5,
+                    "charLength": 8,
+                    "snippet": {
+                      "text": "sqlmodel"
+                    },
+                    "sourceLanguage": "Python"
+                  },
+                  "contextRegion": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "charOffset": 0,
+                    "charLength": 88,
+                    "snippet": {
+                      "text": "from sqlmodel import SQLModel, Field, Column, JSON\r\nfrom typing import List, Optional\r\n\r"
+                    },
+                    "sourceLanguage": "Python"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "project",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v2": "def3f5c2da6b719f",
+              "equalIndicator/v1": "b5527d72a0de96c5b532e3ada6106065a59d27df00a5291ef309e6e0b548d132"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical",
+              "problemType": "REGULAR",
+              "tags": [
+                "Python"
+              ]
+            }
+          },
+          {
+            "ruleId": "PyUnresolvedReferencesInspection",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "Unresolved reference 'FastAPI'",
+              "markdown": "Unresolved reference 'FastAPI'"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "main.py",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 21,
+                    "charOffset": 20,
+                    "charLength": 7,
+                    "snippet": {
+                      "text": "FastAPI"
+                    },
+                    "sourceLanguage": "Python"
+                  },
+                  "contextRegion": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "charOffset": 0,
+                    "charLength": 184,
+                    "snippet": {
+                      "text": "from fastapi import FastAPI, Depends\r\nfrom sqlmodel import SQLModel, Session, create_engine, select\r\nfrom models import Teclado, Mouse, Monitor, Placadevideo, Fonte, Headset, Placamae\r"
+                    },
+                    "sourceLanguage": "Python"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "project",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v2": "fb1cb9a729c125f0",
+              "equalIndicator/v1": "ce68d8985b558e2909c02f7da03df11c7751621ab38ebe2e26ff425c11829438"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical",
+              "problemType": "REGULAR",
+              "tags": [
+                "Python"
+              ]
+            }
+          },
+          {
+            "ruleId": "PyUnresolvedReferencesInspection",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "Unresolved reference 'SQLModel'",
+              "markdown": "Unresolved reference 'SQLModel'"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "models.py",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 22,
+                    "charOffset": 21,
+                    "charLength": 8,
+                    "snippet": {
+                      "text": "SQLModel"
+                    },
+                    "sourceLanguage": "Python"
+                  },
+                  "contextRegion": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "charOffset": 0,
+                    "charLength": 88,
+                    "snippet": {
+                      "text": "from sqlmodel import SQLModel, Field, Column, JSON\r\nfrom typing import List, Optional\r\n\r"
+                    },
+                    "sourceLanguage": "Python"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "project",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v2": "64d8769f0b6e6a1d",
+              "equalIndicator/v1": "db28a367cd26c166e17c8cebe44f804952afa53a8c1d7e85401fe68e875a5f77"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical",
+              "problemType": "REGULAR",
+              "tags": [
+                "Python"
+              ]
+            }
+          },
+          {
+            "ruleId": "PyUnresolvedReferencesInspection",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "Unresolved reference 'fastapi'",
+              "markdown": "Unresolved reference 'fastapi'"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "main.py",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 6,
+                    "charOffset": 5,
+                    "charLength": 7,
+                    "snippet": {
+                      "text": "fastapi"
+                    },
+                    "sourceLanguage": "Python"
+                  },
+                  "contextRegion": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "charOffset": 0,
+                    "charLength": 184,
+                    "snippet": {
+                      "text": "from fastapi import FastAPI, Depends\r\nfrom sqlmodel import SQLModel, Session, create_engine, select\r\nfrom models import Teclado, Mouse, Monitor, Placadevideo, Fonte, Headset, Placamae\r"
+                    },
+                    "sourceLanguage": "Python"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "project",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v2": "3c5985cfa8a77024",
+              "equalIndicator/v1": "de607eddf04a783c2f25bb742576bed0a5793dfb4f73b31d5001f836e476381d"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical",
+              "problemType": "REGULAR",
+              "tags": [
+                "Python"
+              ]
+            }
+          }
+        ],
+        "configProfile": "absent",
+        "deviceId": "200820300000000-a5a3-2767-6709-fa686c5f7066",
+        "qodanaNewResultSummary": {
+          "high": 2,
+          "moderate": 4,
+          "total": 6
+        }
+      }
+    }
+  ]
+}

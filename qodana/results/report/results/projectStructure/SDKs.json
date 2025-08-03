@@ -1,0 +1,23 @@
+{
+  "sdks": [
+    {
+      "name": "Python 3.12",
+      "roots": [
+        "file:///opt/miniconda3/lib/python3.12",
+        "file:///opt/miniconda3/lib/python3.12/lib-dynload",
+        "file:///opt/miniconda3/lib/python3.12/site-packages",
+        "file://$PROJECT_DIR$/../cache/idea/251/python_stubs/-2066100795",
+        "file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/python-skeletons",
+        "file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stdlib",
+        "file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stubs/cffi",
+        "file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stubs/tqdm",
+        "file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stubs/boltons",
+        "file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stubs/colorama",
+        "file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stubs/requests",
+        "file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stubs/setuptools"
+      ],
+      "sdkType": "Python SDK",
+      "sdkVersion": "Python 3.12.2"
+    }
+  ]
+}

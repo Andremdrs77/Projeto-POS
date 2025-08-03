@@ -1,0 +1,6 @@
+Directory;Absolute Time spent on Inspection Group 'all', s;Percent of Time spent on Inspection Group 'all';Inspections Problem Count in Group 'all';Times Inspection from Group 'all' was Performed
+/data/project;161.76;100.00%;19;328
+/data/project/qodana/results/log;2.59;1.60%;0;51
+/data/project/qodana/results/log/indexing-diagnostic;0.59;0.36%;0;14
+/data/project/qodana/results/log/indexing-diagnostic/project.15375f63;0.01;0.01%;0;5
+/data/project/dados;0.09;0.06%;0;5
